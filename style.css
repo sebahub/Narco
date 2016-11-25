@@ -1,0 +1,189 @@
+/* Variables */
+/* media Queries */
+/* colors */
+/* fonts */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style-type: none; }
+
+.clearfix {
+  clear: both; }
+
+body {
+  height: 100%;
+  font-family: helvetica; }
+
+html {
+  height: 100%; }
+
+/* mobile */
+p {
+  font-weight: 100; }
+
+h1 {
+  font-weight: 100;
+  font-size: 16px; }
+
+h2 {
+  font-weight: 100;
+  color: white;
+  text-transform: uppercase; }
+
+h3 {
+  text-transform: uppercase;
+  width: 28px;
+  border-bottom: 1px solid orange;
+  font-weight: 100;
+  margin-bottom: 5px;
+  padding-bottom: 3px;
+  letter-spacing: 3px; }
+
+header {
+  background: url(bilder/space_bg.jpg);
+  width: 100%;
+  height: 568px;
+  background-size: cover;
+  background-repeat: none; }
+  header nav {
+    width: 100%;
+    margin: auto;
+    padding-top: 35px; }
+    header nav .nav_logo {
+      width: 200px;
+      margin: auto; }
+      header nav .nav_logo img {
+        width: 200px; }
+    header nav ul {
+      width: 50%;
+      margin: auto; }
+      header nav ul li {
+        width: 50%;
+        text-align: right;
+        text-transform: uppercase;
+        padding-right: 5px;
+        border-right: 1px solid;
+        font-size: 22px; }
+      header nav ul li:nth-child(3n) {
+        position: relative;
+        left: 50%;
+        text-align: left;
+        padding-left: 5px;
+        border-left: 1px solid;
+        border-right: none;
+        margin-left: -1px; }
+      header nav ul li:nth-child(4n) {
+        position: relative;
+        left: 50%;
+        text-align: left;
+        padding-left: 5px;
+        border-left: 1px solid;
+        border-right: none;
+        margin-left: -1px; }
+      header nav ul li:first-child {
+        padding-top: 10px; }
+      header nav ul li:last-child {
+        padding-bottom: 10px; }
+  header .tourdates {
+    width: 100%;
+    height: 75px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    text-align: center; }
+    header .tourdates h3 {
+      text-transform: uppercase;
+      font-weight: 100;
+      font-size: 16px;
+      line-height: 1.5;
+      color: white; }
+
+#audio {
+  width: 100%;
+  padding-top: 35px;
+  background-color: #2e2e2e;
+  color: white;
+  padding-bottom: 35px; }
+  #audio h2 {
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: 10px;
+    text-transform: uppercase; }
+  #audio h3 {
+    line-height: 0.8;
+    text-transform: uppercase;
+    border: none; }
+  #audio .album {
+    width: 200px;
+    margin: auto; }
+  #audio .soundcloud {
+    width: 95%;
+    margin: 25px auto;
+    margin-bottom: 0;
+    max-width: 1200px; }
+
+#about {
+  width: 100%;
+  padding-top: 35px;
+  background-color: #fcfcfc;
+  padding-bottom: 35px; }
+  #about h3 {
+    text-transform: uppercase;
+    width: 28px;
+    border-bottom: 1px solid orange;
+    font-weight: 100;
+    margin-bottom: 5px;
+    padding-bottom: 3px;
+    letter-spacing: 3px; }
+  #about p {
+    font-weight: 100;
+    padding-right: 9px; }
+  #about .aboutwrapper {
+    width: 95%;
+    margin: auto;
+    max-width: 1200px; }
+  #about .line {
+    width: 6.5%;
+    border-bottom: 1px solid orange;
+    margin-bottom: 5px; }
+  #about img {
+    margin-right: 1%;
+    width: 150px; }
+
+.aboutcontent {
+  width: 56%;
+  float: right;
+  padding-left: 2px; }
+
+#bilder {
+  padding-top: 35px;
+  width: 100%;
+  background-color: #2e2e2e;
+  padding-bottom: 35px; }
+  #bilder .bildwrapper {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    max-width: 1200px; }
+    #bilder .bildwrapper img {
+      width: 45%; }
+
+#kontakt {
+  padding-top: 35px;
+  height: 500px; }
+  #kontakt .kontaktwrapper {
+    margin-left: 28%; }
+    #kontakt .kontaktwrapper p {
+      padding-top: 10px;
+      padding-left: 30px; }
+
+/*# sourceMappingURL=style.css.map */

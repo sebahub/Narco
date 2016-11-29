@@ -67,19 +67,21 @@ header {
     header nav ul {
       width: 100%;
       position: absolute;
-      bottom: 0;
+      top: 0;
       height: 50px;
       line-height: 50px;
       display: flex;
-      background: rgba(255, 255, 255, 0.5); }
+      background: #2e2e2e; }
       header nav ul li {
-        border: 1px solid white;
+        border-right: 1px solid white;
         box-shadow: 1px;
         width: 25%;
-        text-align: center;
-        align-items: flex-end; }
+        text-align: center; }
       header nav ul a {
-        color: black; }
+        color: white;
+        text-transform: uppercase; }
+      header nav ul li:last-child {
+        border-right: none; }
   header .tourdates {
     width: 200px;
     height: auto;

@@ -1,0 +1,39 @@
+            //li
+                width: 50%
+                text-align: right
+                //margin-bottom: 5px
+                //background-color: rgba(0, 0, 0, 0.3)
+                text-transform: uppercase
+                padding-right: 5px
+                //border-right: 1px solid $primary-color
+                font-size: 22px
+                padding-top: 5px
+                
+
+                
+            //li:nth-child(3n)
+                position: relative
+                left: 50%
+                text-align: left
+                padding-left: 5px
+                //border-left: 1px solid $primary-color
+                border-right: none
+                margin-left: -1px
+            //li:nth-child(4n)
+                position: relative
+                left: 50%
+                text-align: left
+                padding-left: 5px
+                //border-left: 1px solid $primary-color
+                border-right: none
+                margin-left: -1px
+            //li:first-child
+                padding-top: 10px  
+            //li:last-child
+                padding-bottom: 10px
+            //a
+                letter-spacing: 3px
+                font-weight: 300
+                background: $primary-color
+                color: black
+                padding-left: 3px

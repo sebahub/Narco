@@ -3,8 +3,9 @@
 
 
 /* media Queries */
+$xsmall: 350px
 $small: 768px
-$medium: 992px
+$medium: 960px
 $large: 1200px
 
 /* colors */
@@ -55,6 +56,7 @@ h1
     font-weight: 100
     font-size: 16px
     
+    
 h2
     font-weight: 300
     color: white
@@ -84,7 +86,7 @@ header
     nav
         width: 100%
         margin: auto
-        padding-top: 100px
+        padding-top: 130px
         
         .nav_logo
             width: 200px
@@ -115,26 +117,21 @@ header
             li:last-child
                 border-right: none
                     
-                
-                
-
-        
-               
-
-            
-                
     .tourdates
-        width: 200px
+        width: 25%
+        max-width: 960px
+        min-width: 200px
         height: auto
-        background-color: $transparenz
+        //background-color: $transparenz
         margin: auto
-        margin-top: 50px
+        margin-top: 10%
         margin-bottom: 30px
         padding: 10px 0
         text-align: left
-        -webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75)
-        -moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75)
-        box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75)
+        //border: 1px solid
+        //-webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75)
+        //-moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75)
+        //box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75)
         
         
         h2
@@ -142,7 +139,7 @@ header
             font-weight: 300
             font-size: 16px
             line-height: 0.9
-            color: white
+            color: black
             max-width: 500px
             margin: auto
             padding: 0 10px
@@ -175,7 +172,7 @@ header
         width: 95%
         margin: 25px auto
         margin-bottom: 0
-        max-width: 1200px
+        max-width: 960px
         
 #about
     width: 100%
@@ -197,7 +194,7 @@ header
     .aboutwrapper
         width: 95%
         margin: auto
-        max-width: 1200px
+        max-width: 960px
     .line
         width: 6.5%
         border-bottom: 1px solid orange
@@ -205,14 +202,14 @@ header
         
     
     img
-        float: left
+        //float: left
         margin-right: 1%
         width: 150px
         
         
 .aboutcontent
-    width: 50%
-    float: right
+    width: 95%
+    //float: right
     padding-left: 2px
     
         
@@ -229,9 +226,9 @@ header
         width: 95%
         margin: auto
         text-align: center
-        max-width: 1200px
+        max-width: 960px
         img
-            width: 45%
+            width: 100%
             
 #kontakt
     padding-top: 35px
@@ -249,7 +246,7 @@ header
             //margin-left: 50%
             //padding-right: 10%
             padding-top: 10px
-            width: 50%
+            width: 100%
             //padding-left: 30px
 
             
@@ -364,7 +361,156 @@ fieldset
 
 /* Kontaktformular Ende */
 
-/* back to top */
+#social
+    width: 100%
+    margin-top: 50px
+    margin-bottom: 35px
+    h4
+        text-align: center
+        margin-bottom: 25px
+        font-family: 'Indie Flower', cursive
+        font-size: 20px
+    .social_logos
+        width: 95%
+        margin: auto
+        text-align: center
+        img
+            width: 50px
+            margin: 0 25px
+            
+            
+footer
+    height: 50px
+    background-color: $secondary-color
+
+
+/* xsmall */
+
+@media screen and (min-width: $xsmall)
+    #about
+        img
+            float: left
+            //margin-right: 1%
+            width: 45%
+    .aboutcontent
+        width: 50%
+        float: right
+        padding-left: 2px
+        
+    #bilder
+        width: 100%
+        .bildwrapper
+            width: 97%
+            img
+                
+                width: 48%
+                float: left
+                margin: 1%
+                
+@media screen and (min-width: $small)
+
+    #audio
+        .albumwrapper
+            width: 95%
+            margin: auto
+            .album
+                width: 45%
+                float: left
+                margin: 0
+                //margin-top: 35px
+                img
+                    width: 100%
+            .soundcloud
+                
+                float: right
+                width: 50%
+                margin: 0
+                margin-top: 10%
+    h3
+        font-size: 28px
+    h1
+        font-size: 20px
+    p
+        font-size: 20px
+    .tourdates
+        h2
+            font-size: 30px
+                
+@media screen and (min-width: $medium)
+    
+    #bilder
+        .bildwrapper
+            img
+                width: 31.33333%
+                
+    #kontakt
+        float: left
+        width: 50%
+        max-width: 600px
+    #social
+        width: 50%
+        float: right
+        height: 335px
+        margin-top: 200px
+        padding: 0
+        max-width: 960px
+    .kontaktwrapper
+        max-width: 960px
+        margin: auto
+                
+                
+@media screen and (min-width: $large)
+    
+    header
+        width: 100%
+        height: 650px
+        nav
+            height: 60px
+            width: 100%
+            margin: auto
+            padding-top: 50px
+            background-color: $primary-color
+
+            .nav_logo
+                width: 200px
+                display: inline-block
+                padding-left: 10%
+                position: absolute
+                top: 15px
+                img
+                    width: 200px
+            ul
+                margin-left: 50%
+                width: 50%
+                height: 20px
+                line-height: 65px
+                background: none
+                padding-right: 10%
+                li
+                    
+                a
+                    color: black
+                    text-transform: uppercase
+                    transition: 0.5s
+                    &:hover
+                        color: $schmuckfarbe
+                        border-bottom: 1px solid $schmuckfarbe
+
+                li:last-child
+                    border-right: none
+    .albumwrapper, .aboutcontent, .bilderwrapper
+        max-width: 960px
+        
+        
+                
+
+    
+                
+    
+
+    
+
+
 
 
  

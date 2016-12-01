@@ -54,17 +54,15 @@ p
 
 h1
     font-weight: 100
-    font-size: 16px
+    font-size: 1rem
     
     
 h2
     font-weight: 300
     color: white
     text-transform: uppercase
+    font-family: 'Indie Flower', cursive
  
-    
-
-    
 h3
     text-transform: uppercase
     //background-color: red
@@ -122,7 +120,7 @@ header
         max-width: 960px
         min-width: 200px
         height: auto
-        //background-color: $transparenz
+        background-color: $primary-color
         margin: auto
         margin-top: 10%
         margin-bottom: 30px
@@ -132,19 +130,21 @@ header
         //-webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75)
         //-moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75)
         //box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75)
+        h3
+            margin-left: 10px
         
         
         h2
             text-transform: uppercase
             font-weight: 300
-            font-size: 16px
+            font-size: 1rem
             line-height: 0.9
             color: black
             max-width: 500px
             margin: auto
             padding: 0 10px
             .ort
-                font-size: 12px
+                font-size: 0.75rem
                 margin-bottom: 10px
                 
         
@@ -286,7 +286,7 @@ header
 #contact h4
     margin: 5px 0 15px
     display: block
-    font-size: 13px
+    font-size: 0.8rem
     font-weight: 400
 
 
@@ -335,7 +335,7 @@ fieldset
     color: #FFF
     margin: 0 0 5px
     padding: 10px
-    font-size: 15px
+    font-size: 1rem
 
 
 #contact button[type="submit"]:hover 
@@ -369,7 +369,7 @@ fieldset
         text-align: center
         margin-bottom: 25px
         font-family: 'Indie Flower', cursive
-        font-size: 20px
+        font-size: 1.5rem
     .social_logos
         width: 95%
         margin: auto
@@ -407,6 +407,7 @@ footer
                 float: left
                 margin: 1%
                 
+                
 @media screen and (min-width: $small)
 
     #audio
@@ -427,15 +428,18 @@ footer
                 margin: 0
                 margin-top: 10%
     h3
-        font-size: 28px
+        font-size: 1.2rem
     h1
-        font-size: 20px
+        font-size: 1.2rem
     p
-        font-size: 20px
-    #tourdates
-        h2
-            font-size: 28px
-                
+        font-size: 1.2rem
+    header
+        .tourdates
+            h2
+                font-size: 1.2rem
+                .ort
+                    font-size: 1rem
+
 @media screen and (min-width: $medium)
     
     #bilder
@@ -457,6 +461,12 @@ footer
     .kontaktwrapper
         max-width: 960px
         margin: auto
+    header
+        .tourdates
+            h2
+                font-size: 150%
+            h3
+                font-size: 150%
                 
                 
 @media screen and (min-width: $large)

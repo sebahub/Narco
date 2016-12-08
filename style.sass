@@ -76,11 +76,12 @@ h3
 
 header
     //overflow: scroll
-    background: url(bilder/space_bg.jpg)
+    background: url(bilder/bg_big.jpg)
     width: 100vw
     height: 100vh
     background-size: cover
     background-repeat: no-repeat
+    background-position: bottom
     nav
         width: 100%
         margin: auto
@@ -95,13 +96,16 @@ header
         ul
             width: 100%
             position: absolute
-            top: 0
+            bottom: 0
             //width: 90%
             //margin: auto
             height: 50px
             line-height: 50px
             display: flex
-            background: $secondary-color
+            background: $transparenz
+            position: fixed
+            z-index: 99
+            
             li
                 border-right: 1px solid white
                 box-shadow: 1px
@@ -151,7 +155,7 @@ header
 #audio
     width: 100%
     padding-top: 35px
-    background-color: $secondary-color
+    background-color: white
     color: white
     padding-bottom: 35px
     h2
@@ -490,12 +494,15 @@ footer
                 img
                     width: 200px
             ul
+                position: absolute
+                top: 0
                 margin-left: 50%
                 width: 50%
                 height: 20px
                 line-height: 65px
                 background: none
                 padding-right: 10%
+                
                 li
                     
                 a

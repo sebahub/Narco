@@ -51,11 +51,12 @@ h3 {
   letter-spacing: 3px; }
 
 header {
-  background: url(bilder/space_bg.jpg);
+  background: url(bilder/bg_big.jpg);
   width: 100vw;
   height: 100vh;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: bottom; }
   header nav {
     width: 100%;
     margin: auto;
@@ -68,11 +69,13 @@ header {
     header nav ul {
       width: 100%;
       position: absolute;
-      top: 0;
+      bottom: 0;
       height: 50px;
       line-height: 50px;
       display: flex;
-      background: #2e2e2e; }
+      background: rgba(46, 46, 46, 0.5);
+      position: fixed;
+      z-index: 99; }
       header nav ul li {
         border-right: 1px solid white;
         box-shadow: 1px;
@@ -112,7 +115,7 @@ header {
 #audio {
   width: 100%;
   padding-top: 35px;
-  background-color: #2e2e2e;
+  background-color: white;
   color: white;
   padding-bottom: 35px; }
   #audio h2 {
@@ -383,6 +386,8 @@ footer {
         header nav .nav_logo img {
           width: 200px; }
       header nav ul {
+        position: absolute;
+        top: 0;
         margin-left: 50%;
         width: 50%;
         height: 20px;
